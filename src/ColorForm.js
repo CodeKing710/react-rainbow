@@ -8,13 +8,14 @@ function ColorForm(props){
   const handleSubmit = (e) => {
     e.preventDefault(); //We don't want default behavior from the submit event
     props.addColor(input); //addColor function was passed via JSX in App.js
+    document.getElementById('colorForm').value = ''; //Remove current listing
   }
 
   return (
     <div>
       <form onSubmit={handleSubmit}>
         {/*Will update the state of the input as you type to make sure nothing is missed*/}
-        <input type="text" onChange={(e) => setInput(e.target.value)} />
+        <input type="text" id="colorForm" onChange={(e) => setInput(e.target.value)} />
         <button type="submit">Submit!</button>
       </form>
     </div>

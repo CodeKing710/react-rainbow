@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+/*Personal CSS*/
+body {background: #ccc;}
+* {transition: all 0.3s ease}
+.colorBtn {
+  display: inline-block;
+  width: 100%;
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+  opacity: 1;
+  background: transparent;
+  border: none;
+  font-weight: bolder;
+  font-size: 1.5em;
+}
+.colorBtn:hover{opacity: 1;}
+.colorBlock:hover {
+  opacity: 0.7;
+}
